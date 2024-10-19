@@ -1,0 +1,15 @@
+{
+    "name": "openmage/dev-copyright",
+    "description": "Updated copyright blocks.",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+        {
+            "name": "Justin Beaty",
+            "homepage": "https://github.com/justinbeaty"
+        }
+    ]
+}

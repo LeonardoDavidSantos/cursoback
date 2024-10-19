@@ -1,0 +1,32 @@
+[
+    {
+        "packageName": "colinmollenhour\/cache-backend-redis",
+        "version": "1.17.1.0-d403f4473e1b3cc616fa59d187e817543b6620c1",
+        "installedFiles": [
+            "\/app\/code\/community\/Cm\/Cache\/Backend\/Redis.php",
+            "\/lib\/Credis"
+        ]
+    },
+    {
+        "packageName": "colinmollenhour\/magento-redis-session",
+        "version": "3.2.0.0-4f10ca7b2370192f05d04d6e185cf2896b8a14aa",
+        "installedFiles": [
+            "\/app\/code\/community\/Cm\/RedisSession",
+            "\/app\/etc\/modules\/Cm_RedisSession.xml"
+        ]
+    },
+    {
+        "packageName": "openmage\/dev-copyright",
+        "version": "dev-main-c963a65ec34e932f2fef0d80db087e059bb1fec8",
+        "installedFiles": [
+            "\/shell\/update-copyright.php"
+        ]
+    },
+    {
+        "packageName": "openmage\/dev-translations",
+        "version": "dev-main-bdbecd2f51723056787ca1efb24db700d605c152",
+        "installedFiles": [
+            "\/shell\/translations.php"
+        ]
+    }
+]

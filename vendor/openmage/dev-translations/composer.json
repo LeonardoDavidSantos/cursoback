@@ -1,0 +1,15 @@
+{
+    "name": "openmage/dev-translations",
+    "description": "Finds missing and unused translations.",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+        {
+            "name": "Justin Beaty",
+            "homepage": "https://github.com/justinbeaty"
+        }
+    ]
+}
