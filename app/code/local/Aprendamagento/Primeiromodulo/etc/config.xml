@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aprendamagento_Primeiromodulo>
+            <version>1.0.0</version>
+        </Aprendamagento_Primeiromodulo>
+    </modules>
+</config>

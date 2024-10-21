@@ -1,0 +1,51 @@
+parametersSchema:
+    magentoRootPath: string()
+parameters:
+    magentoRootPath: %currentWorkingDirectory%/htdocs
+    excludePaths:
+        - */app/code/local/*/*/data/*
+        - */app/code/local/*/*/sql/*
+    bootstrapFiles:
+        - phpstan-bootstrap.php
+    scanFiles:
+        - %magentoRootPath%/app/Mage.php
+    typeAliases:
+        Mage_Catalog_Model_Entity_Product_Collection: 'Mage_Catalog_Model_Resource_Product_Collection'
+        callback: 'callable'
+    earlyTerminatingMethodCalls:
+        Mage:
+            - throwException
+
+services:
+    -
+        class: PHPStanMagento1\Reflection\Varien\Object\MagicMethodsReflectionExtension
+        tags:
+            - phpstan.broker.methodsClassReflectionExtension
+    -
+        class: PHPStanMagento1\Type\Mage\CoreModelLayout\Helper
+        tags:
+            - phpstan.broker.dynamicMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\CoreBlockAbstract\Helper
+        tags:
+            - phpstan.broker.dynamicMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\CoreModelLayout\GetBlockSingleton
+        tags:
+            - phpstan.broker.dynamicMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\GetModel
+        tags:
+            - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\GetResourceModel
+        tags:
+            - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\GetSingleton
+        tags:
+            - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+    -
+        class: PHPStanMagento1\Type\Mage\Helper
+        tags:
+            - phpstan.broker.dynamicStaticMethodReturnTypeExtension
