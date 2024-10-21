@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aprendamagento_Primeiromodulo>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Aprendamagento_Primeiromodulo>
+    </modules>
+</config>
