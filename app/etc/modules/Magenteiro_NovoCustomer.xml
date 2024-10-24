@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_NovoCustomer>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Customer/>
+            </depends>
+        </Magenteiro_NovoCustomer>
+    </modules>
+</config>

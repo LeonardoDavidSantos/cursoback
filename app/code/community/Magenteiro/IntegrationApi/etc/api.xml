@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <magenteiro_integration>
+                <model>magenteiro_integrationapi/api</model>
+                <title>Magenteiro_Integration</title>
+                <model>magenteiro_integrationapi/api</model>
+                <acl>magenteiro_integration</acl>
+                <methods>
+                    <list>
+                        <title>Lista de registros</title>
+                        <method>listIntegration</method>
+                        <acl>magenteiro_integration/list</acl>
+                    </list>
+                </methods>
+            </magenteiro_integration>
+        </resources>
+        <resources_alias>
+            <magenteiro_integration>magenteiro_integration</magenteiro_integration>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <magenteiro_integration>magenteiroIntegration</magenteiro_integration>
+            </resources_function_prefix>
+        </v2>
+        <acl>
+            <resources>
+                <magenteiro_integration module="magenteiro_integration">
+                    <title>Magenteiro Integration</title>
+                    <sort_order>1</sort_order>
+                </magenteiro_integration>
+            </resources>
+        </acl>
+    </api>
+</config>

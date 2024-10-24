@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <js>custom-validations.js</js>
+            </action>
+        </reference>
+    </default>
+</layout>
+

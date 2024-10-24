@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magenteiro_NovoCustomer>
+            <version>1.0.0</version>
+        </Magenteiro_NovoCustomer>
+    </modules>
+    <global>
+        <magenteiro_novocustomer>
+            <class>Magenteiro_NovoCustomer_Model</class>
+        </magenteiro_novocustomer>
+    </global>
+    <customer>
+        <rewrite>
+            <customer>Magenteiro_NovoCustomer_Model_Customer_Customer</customer>
+        </rewrite>
+    </customer>
+</config>

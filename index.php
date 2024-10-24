@@ -54,3 +54,5 @@ if (file_exists($maintenanceFile)) {
 }
 
 Mage::run($mageRunCode, $mageRunType);
+
+//var_dump(Mage::app()->getLayout()->getUpdate()->getHandles());
